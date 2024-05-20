@@ -1,0 +1,70 @@
+/* Base styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005bbb;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.navbar-menu-icon {
+    height: 40px;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: #005bbb;
+    padding: 1.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar-menu.active {
+    display: block;
+}
+
+/* Styles for menu items */
+.navbar-menu-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #005bbb;
+    text-decoration: none;
+    margin-bottom: 0.5rem; /* Space between items */
+}
+
+.navbar-menu-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .navbar-menu-icon {
+        display: block; /* Ensure menu icon is always visible on small screens */
+    }
+
+    .navbar-menu-item {
+        display: block; /* Ensure full-width clickable area for better mobile usability */
+    }
+}

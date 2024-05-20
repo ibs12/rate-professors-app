@@ -1,0 +1,248 @@
+/* Adjust the top margin to create space for the NavBar */
+.profile-page-professor-main {
+    padding-top: 10vh;
+    margin-left: 20vh;
+    margin-right: 5vh;
+    /*align-items: flex-start; /* Aligns children to the left */
+
+}
+
+.profile-page-professor-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-page-professor-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.profile-page-saved-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-page-saved-icon:hover {
+    transform: scale(1.1);
+}
+
+.profile-page-professor-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-page-professor-info h2, .profile-page-professor-info p, .profile-page-professor-rating span {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-page-professor-info h2 {
+    color: #333;
+    font-size: 35px;
+}
+
+.profile-page-professor-info p {
+    color: #666;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.profile-page-professor-rating span {
+    font-size: 50pt;
+    color: #000000;
+    font-weight: 500px;
+}
+
+.profile-page-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    width: 80%;
+    
+}
+
+
+
+.profile-page-review h4 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-page-review p {
+    color: #666;
+    font-size: 16px;
+}
+
+.profile-page-review span {
+    display: block;
+    margin-top: 10px;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.profile-page-review-header {
+    margin-bottom: 10px;
+}
+
+.profile-page-sort-button-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-page-sort-button {
+    padding: 10px 20px;
+    background-color: #005fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600pt;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.profile-page-sort-button:hover {
+    background-color: #0056b3;
+}
+
+.profile-page-write-review-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-page-write-review-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-page-write-review-button:hover {
+    background-color: #0056b3;
+}
+
+.profile-page-toggle-info-card {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-page-toggle-info-card span {
+    font-size: 16px;
+    color: #007bff; /* Blue to mimic a hyperlink */
+   /*  text-decoration: underline; Underline to emphasize interactivity */
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    font-family: "Crimison text";
+}
+
+.profile-page-toggle-info-card span:hover {
+    text-decoration: none; /* Optional: Remove underline on hover for a dynamic effect */
+    color:#393939;
+    text-decoration: underline;/*  Underline to emphasize interactivity */
+
+}
+
+/* Styles for tablets and smaller devices (up to 768px) */
+@media (max-width: 860px) {
+    .profile-page-professor-main {
+        padding-top: 7vh;
+        margin-left: 10vh;
+        margin-right: 7vh;
+    }
+
+    .profile-page-professor-card, .profile-page-review {
+        width: 95%;
+    }
+
+    .profile-page-professor-rating span {
+        font-weight: 30pt;
+    }
+
+    .profile-page-professor-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-page-saved-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-page-professor-info h2 {
+        font-size: 30px;
+    }
+
+    .profile-page-professor-info p, .profile-page-review p {
+        font-size: 20px;
+    }
+}
+
+/* Styles for mobile devices (up to 425px) */
+@media (max-width: 500px) {
+    .profile-page-professor-main {
+        padding-top: 7vh;
+        margin-left: 2vh;
+        margin-right: 1vh;
+    }
+
+    .profile-page-professor-content, .profile-page-review {
+        display: block;
+    }
+
+    .profile-page-professor-card, .profile-page-review {
+        width: 90%;
+    }
+
+    .profile-page-professor-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-page-saved-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-page-professor-info h2 {
+        font-size: 25px;
+    }
+
+    .profile-page-professor-info p, .profile-page-review p {
+        font-size: 18px;
+    }
+
+    .profile-page-professor-rating span {
+        font-size: 30pt;
+    }
+
+    .profile-page-sort-button-container, .profile-page-write-review-container {
+        display: block;
+    }
+}

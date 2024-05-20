@@ -1,0 +1,114 @@
+.text-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+.intro-text {
+  margin-bottom: 10px; /* Keeps space between the text and the search bar */
+  font-size: 45pt;
+  font-weight: 400;
+  font-family: "Crimson text", serif;
+  color: #000000;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  font-weight: 400;
+  font-family: "Crimson text", serif;
+  font-size: 20pt;
+}
+
+.search-button {
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+.filter-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  font-family: "Crimson text", serif;
+  font-size: 16pt;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.search-button img {
+  width: 30px;
+  height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .text-container {
+    margin-top: 30vh;
+  }
+
+  .intro-text {
+    font-size: 24pt; /* Smaller font size for mobile devices */
+    margin-bottom: 5px; /* Reduce space between text and search bar */
+  }
+
+  .search-container {
+    margin-top: 0;
+  }
+
+
+
+  .search-input {
+    border-radius: 15px 0 0 15px;
+    width:90%;
+  }
+
+  .search-button {
+    width: 15%; /* Smaller percentage for the button */
+    padding: 8px;
+  }
+  .filter-select {
+    font-size: 14pt; /* Adjust font size for smaller devices */
+    padding: 0px; /* Adjust padding for smaller devices */
+    width: 50%; /* Optional: adjust width for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container {
+    margin-top: 20vh;
+  }
+
+  .intro-text {
+    font-size: 20pt; /* Even smaller font size for very small devices */
+    margin-bottom: 5px; /* Reduce space between text and search bar */
+  }
+
+  .search-input,
+  .search-button {
+    padding: 8px; /* Slightly reduce padding */
+    font-size: 14pt; /* Smaller font size for very small devices */
+  }
+
+  .search-button img {
+    width: 20px; /* Smaller image size for very small devices */
+  }
+  .filter-select {
+    font-size: 12pt; /* Adjust font size for very small devices */
+    padding: 6px; /* Adjust padding for very small devices */
+    /* Other adjustments as necessary */
+  }
+}
+

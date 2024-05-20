@@ -1,0 +1,277 @@
+  .recommended-professors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5rem;
+  }
+  
+  .recommended-professor-cards {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .recommended-professor-infos-container {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  
+  .recommended-professor-department {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .recommended-professor-rating {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  #departmentFilter {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 2rem;
+  }
+  .quiz-prompt {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .quiz-prompt p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quiz-prompt button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.recommended-professors-page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.quiz-prompt {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Filter */
+#departmentFilter {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+/* Recommended Professors Container */
+.recommended-professors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Recommended Professor Cards */
+.recommended-professor-cards {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.recommended-professor-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recommended-professor-infos-container {
+  display: flex;
+  align-items: center;
+}
+
+.recommended-professor-img {
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.recommended-professor-infos a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.recommended-professor-department {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .recommended-professors-page-title {
+    font-size: 2rem;
+  }
+
+  #departmentFilter {
+    width: 100%;
+  }
+
+  .recommended-professors-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* RecommendedProfessorsPage.css */
+.recommended-professors-page-content {
+  padding: 5rem;
+  background-color: #f5f5f5;
+}
+
+.recommended-professors-page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recommended-professors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.recommended-professor-cards {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.recommended-professor-infos-container {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.recommended-professor-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.recommended-professor-department {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.recommended-professor-rating {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+#departmentFilter {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.quiz-prompt {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-prompt p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-prompt button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .recommended-professors-page-content {
+    padding: 2rem;
+  }
+
+  .recommended-professors-page-title {
+    font-size: 2rem;
+  }
+
+  .recommended-professors-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .recommended-professor-infos-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .recommended-professor-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .recommended-professor-department,
+  .recommended-professor-rating {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommended-professors-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .recommended-professor-img {
+    width: 100px;
+    height: 100px;
+  }
+}

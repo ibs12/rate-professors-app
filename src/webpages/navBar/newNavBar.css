@@ -1,0 +1,54 @@
+/* Base styles for the navbar */
+.newnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005bbb;
+    color: white;
+    padding: 0.5rem 3rem 0.5rem 1rem; /* Adjusted right padding */
+    position: fixed;
+    margin-right: 30vh;
+    top: 0;
+    left: 0;
+    width: 99%;
+    z-index: 1000;
+}
+.newnavbar-logo {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.newnavbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newnavbar-item {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px; /* Increased font size */
+}
+
+.newnavbar-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #000000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .newnavbar {
+        padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    }
+    .newnavbar-item {
+        padding: 0.3rem 0.6rem; /* Smaller padding on small screens */
+        font-size: 1rem; /* Slightly smaller font size on small screens */
+    }
+    .newnavbar-logo {
+        height: 30px; /* Smaller logo on small screens */
+    }
+}
