@@ -17,6 +17,7 @@ function NewNavBar() {
         const sessionID = localStorage.getItem('sessionID');
         const userID = localStorage.getItem('userID');
         console.log("Retrieved session data:", { email, sessionID, userID });
+        const apiUrl = "http://localhost:8000";
 
         const webServerUrl = "https://www-student.cse.buffalo.edu/CSE442-542/2024-Spring/cse-442ac/backend/logout/logout.php";
         if (email && sessionID && userID) {
