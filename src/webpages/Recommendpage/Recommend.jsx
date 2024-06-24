@@ -54,7 +54,7 @@ const RecommendedProfessorsPage = () => {
                 const userID = localStorage.getItem('userID');
                 console.log('User ID sent to backend:', userID);
 
-                const response = await fetch(`${webServerUrl}/backend/recommendProfessors/recommendByType.php`, {
+                const response = await fetch(`${apiUrl}/backend/recommendProfessors/recommendByType.php`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

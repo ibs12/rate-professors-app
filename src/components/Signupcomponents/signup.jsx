@@ -25,7 +25,7 @@ const Main = () => {
     }
     
     try {
-      const response = await fetch(`${webServerUrl}/backend/register/register.php`, {
+      const response = await fetch(`${apiUrl}/backend/register/register.php`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

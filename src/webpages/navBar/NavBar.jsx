@@ -26,7 +26,7 @@ function NavBar() {
         if (email && sessionID && userID) {
             console.log("Session data exists. Proceeding with logout.");
             try {
-                const response = await fetch(webServerUrl, {
+                const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

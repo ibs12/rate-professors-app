@@ -34,7 +34,7 @@ function Main() {
       password: password
     };
 
-    fetch(`${webServerUrl}/backend/login/login.php`, {
+    fetch(`${apiUrl}/backend/login/login.php`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function Main() {
 
 
   const checkQuizTaken = (sessionID) => {
-    fetch(`${webServerUrl}/backend/checkquizstatus/checkquizstatus.php`, {
+    fetch(`${apiUrl}/backend/checkquizstatus/checkquizstatus.php`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

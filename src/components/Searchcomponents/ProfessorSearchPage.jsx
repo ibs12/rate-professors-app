@@ -29,7 +29,7 @@ const ProfessorSearchPage = ({ professors, setProfessors }) => {
 
   const handleSearchButtonClick = () => {
     if (searchTerm.trim() !== '') {
-      fetch(`${webServerUrl}/backend/searchFilter/searchFilter.php?query=${encodeURIComponent(searchTerm)}&filter=${filter}`)
+      fetch(`${apiUrl}/backend/searchFilter/searchFilter.php?query=${encodeURIComponent(searchTerm)}&filter=${filter}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');

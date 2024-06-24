@@ -39,7 +39,7 @@ const Homepage = () => {
       //   return; // Exit the function, don't proceed with the search
       // }
 
-      fetch(`${webServerUrl}/backend/searchFilter/searchFilter.php?query=${encodeURIComponent(searchTerm)}&filter=${filter}`)
+      fetch(`${apiUrl}/backend/searchFilter/searchFilter.php?query=${encodeURIComponent(searchTerm)}&filter=${filter}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');

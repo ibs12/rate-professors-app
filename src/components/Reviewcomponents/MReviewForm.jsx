@@ -250,7 +250,7 @@ const MReviewForm = ({ professorImage }) => {
     const webServerUrl = 'https://www-student.cse.buffalo.edu/CSE442-542/2024-Spring/cse-442ac';
     const apiUrl = 'http://localhost:8000';
 
-    fetch(`${webServerUrl}/backend/createReview/createReview.php`, {
+    fetch(`${apiUrl}/backend/createReview/createReview.php`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

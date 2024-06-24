@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
     const userID = localStorage.getItem('userID');
   
     if (email && sessionID && userID) {
-      fetch(`${webServerUrl}/backend/authentication/auth.php`, {
+      fetch(`${apiUrl}/backend/authentication/auth.php`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

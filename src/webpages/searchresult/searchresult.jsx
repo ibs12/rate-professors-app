@@ -34,7 +34,7 @@ function Search() {
       setProfessors(location.state.professors.map(({ professors, pfppath, ...rest }) => ({ name: professors, pfppath, ...rest })));
     } else {
       // If not available, fetch search results from the backend
-      fetch(`${webServerUrl}/backend/searchFilter/?filter=professors`)
+      fetch(`${apiUrl}/backend/searchFilter/?filter=professors`)
         .then(response => response.json())
         .then(data => {
           console.log("Received data from backend:", data);

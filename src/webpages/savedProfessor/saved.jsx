@@ -46,7 +46,7 @@ const Saved = () => {
         const fetchSavedProfessors = async () => {
             const requestBody = { userID: userID, action: 'fetch' }; // Add action 'fetch'
 
-            const response = await fetch(`${webServerUrl}/backend/saveProfessor/fetchSaved.php`, {
+            const response = await fetch(`${apiUrl}/backend/saveProfessor/fetchSaved.php`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ const Saved = () => {
     const removeProfessor = async (professorID) => {
         const userID = localStorage.getItem('userID');
         const requestBody = { userID: userID, professorID: professorID, action: 'remove' };
-        const response = await fetch(`${webServerUrl}/backend/saveProfessor/removeSaved.php`, {
+        const response = await fetch(`${apiUrl}/backend/saveProfessor/removeSaved.php`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(requestBody)

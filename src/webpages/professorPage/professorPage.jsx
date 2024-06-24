@@ -186,7 +186,7 @@ const ProfessorCard = () => {
         };
 
         // Fetch for overall rating
-        fetch(`${webServerUrl}/backend/overallProfessorsRating/overallProfessorsRating.php?professorId=${ID}`, {
+        fetch(`${apiUrl}/backend/overallProfessorsRating/overallProfessorsRating.php?professorId=${ID}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -201,7 +201,7 @@ const ProfessorCard = () => {
         });
 
     
-        fetch(`${webServerUrl}/backend/searchFilter/searchprofessorreviews.php`, {
+        fetch(`${apiUrl}/backend/searchFilter/searchprofessorreviews.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -333,7 +333,7 @@ const ProfessorCard = () => {
     
         console.log('Request Body:', requestBody); // Print requestBody
     
-        fetch(`${webServerUrl}/backend/saveProfessor/checkSavedStatus.php`, {
+        fetch(`${apiUrl}/backend/saveProfessor/checkSavedStatus.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -368,7 +368,7 @@ const ProfessorCard = () => {
             action: isSaved ? 'remove' : 'save'
         };
 
-        fetch(`${webServerUrl}/backend/saveProfessor/saveList.php`, {
+        fetch(`${apiUrl}/backend/saveProfessor/saveList.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

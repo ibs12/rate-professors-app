@@ -32,12 +32,12 @@ const AccountSettingsPage = () => {
     const [semester, setSemester] = useState('');
     const graduationSemesterYear = `${semester} ${newgraduationYear}`;
     const webServerUrl = 'https://www-student.cse.buffalo.edu/CSE442-542/2024-Spring/cse-442ac'
-   
+    const apiUrl = 'http://localhost:8000';
+
     useEffect(() => {
         const sessionId = localStorage.getItem('sessionID');
-        const backendUrl = 'http://localhost:8000/backend/returnuserinfo/returnuserinfo.php';
 
-        fetch(`${webServerUrl}/backend/returnuserinfo/returnuserinfo.php`, {
+        fetch(`${apiUrl}/backend/returnuserinfo/returnuserinfo.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ const AccountSettingsPage = () => {
     
         const backendUrl = 'http://localhost:8000/backend/changePassword/changePassword.php';
     
-        fetch(`${webServerUrl}/backend/changePassword/changePassword.php`, {
+        fetch(`${apiUrl}/backend/changePassword/changePassword.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -150,7 +150,7 @@ const AccountSettingsPage = () => {
         };
 
         const backendUrl = 'http://localhost:8000/backend/removeuser/remove.php';
-        fetch(`${webServerUrl}/backend/removeuser/remove.php`, {
+        fetch(`${apiUrl}/backend/removeuser/remove.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -189,7 +189,7 @@ const AccountSettingsPage = () => {
         };
 
         const backendUrl = 'http://localhost:8000/backend/changeUsername/changeUsername.php';
-        fetch(`${webServerUrl}/backend/changeUsername/changeUsername.php`, {
+        fetch(`${apiUrl}/backend/changeUsername/changeUsername.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -219,7 +219,7 @@ const AccountSettingsPage = () => {
     const fetchUserData = (sessionId) => {
         const backendUrl = 'http://localhost:8000/backend/returnuserinfo/returnuserinfo.php';
 
-        fetch(`${webServerUrl}/backend/returnuserinfo/returnuserinfo.php`, {
+        fetch(`${apiUrl}/backend/returnuserinfo/returnuserinfo.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -281,7 +281,7 @@ const AccountSettingsPage = () => {
     
         const backendUrl = 'http://localhost:8000/backend/addmajorandgraduationdata/addmajorandgraduationdata.php';
 
-        fetch(`${webServerUrl}/backend/addmajorandgraduationdata/addmajorandgraduationdata.php`, {
+        fetch(`${apiUrl}/backend/addmajorandgraduationdata/addmajorandgraduationdata.php`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
