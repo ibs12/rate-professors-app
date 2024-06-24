@@ -51,7 +51,7 @@ const RecommendedProfessorsPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const userID = localStorage.getItem('userID');
+                const userID = sessionStorage.getItem('userID');
                 console.log('User ID sent to backend:', userID);
 
                 const response = await fetch(`${apiUrl}/backend/recommendProfessors/recommendByType.php`, {

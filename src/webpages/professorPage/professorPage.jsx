@@ -318,7 +318,7 @@ const ProfessorCard = () => {
         setProfDepartment(department);
         setPfppath(path);
         setProid(ID);
-        const sessionID = localStorage.getItem('sessionID');
+        const sessionID = sessionStorage.getItem('sessionID');
     
         // If session ID is not found, handle the error
         if (!sessionID) {
@@ -355,7 +355,7 @@ const ProfessorCard = () => {
             handleUnauthorized();
             return;
         }
-        const sessionID = localStorage.getItem('sessionID');
+        const sessionID = sessionStorage.getItem('sessionID');
 
         if (!sessionID) {
             console.error('Session ID not found in local storage');
@@ -646,7 +646,7 @@ export default ProfessorCard;
 //             setProfDepartment(department);
 //             setPfppath(path);
 //             setProid(ID);
-//         const sessionID = localStorage.getItem('sessionID');
+//         const sessionID = sessionStorage.getItem('sessionID');
     
 //         // If session ID is not found, handle the error
 //         if (!sessionID) {
@@ -683,7 +683,7 @@ export default ProfessorCard;
 //             handleUnauthorized();
 //             return;
 //         }
-//         const sessionID = localStorage.getItem('sessionID');
+//         const sessionID = sessionStorage.getItem('sessionID');
 
 //         if (!sessionID) {
 //             console.error('Session ID not found in local storage');

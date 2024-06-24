@@ -13,14 +13,14 @@ export const AuthProvider = ({ children }) => {
 
 
   const signOut = () => {
-    localStorage.clear();
+    sessionStorage.clear();
     setIsAuthenticated(false);
   };
 
   const checkAuth = () => {
-    const email = localStorage.getItem('email');
-    const sessionID = localStorage.getItem('sessionID');
-    const userID = localStorage.getItem('userID');
+    const email = sessionStorage.getItem('email');
+    const sessionID = sessionStorage.getItem('sessionID');
+    const userID = sessionStorage.getItem('userID');
   
     if (email && sessionID && userID) {
       fetch(`${apiUrl}/backend/authentication/auth.php`, {

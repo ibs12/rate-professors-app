@@ -36,7 +36,7 @@ const Saved = () => {
 
 
     useEffect(() => {
-        const userID = localStorage.getItem('userID'); // Get sessionID from local storage
+        const userID = sessionStorage.getItem('userID'); // Get sessionID from local storage
 
         if (!userID) {
             console.error('Session ID not found');
@@ -72,7 +72,7 @@ const Saved = () => {
     }, []);
 
     const removeProfessor = async (professorID) => {
-        const userID = localStorage.getItem('userID');
+        const userID = sessionStorage.getItem('userID');
         const requestBody = { userID: userID, professorID: professorID, action: 'remove' };
         const response = await fetch(`${apiUrl}/backend/saveProfessor/removeSaved.php`, {
             method: 'POST',

@@ -13,9 +13,9 @@ function NewNavBar() {
 
     const handleLogout = async () => {
         console.log("Initiating logout process");
-        const email = localStorage.getItem('email');
-        const sessionID = localStorage.getItem('sessionID');
-        const userID = localStorage.getItem('userID');
+        const email = sessionStorage.getItem('email');
+        const sessionID = sessionStorage.getItem('sessionID');
+        const userID = sessionStorage.getItem('userID');
         console.log("Retrieved session data:", { email, sessionID, userID });
         const apiUrl = "http://localhost:8000";
 
@@ -23,7 +23,7 @@ function NewNavBar() {
         if (email && sessionID && userID) {
             console.log("Session data exists. Proceeding with logout.");
             try {
-                const response = await fetch(apiUrl, {
+                const response = await fetch(`${apiUrl}/backend/logout/logout.php`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -35,9 +35,9 @@ function NewNavBar() {
                     const data = await response.json();
                     console.log("Logout response:", data);
 
-                    localStorage.removeItem('email');
-                    localStorage.removeItem('sessionID');
-                    localStorage.removeItem('userID');
+                    sessionStorage.removeItem('email');
+                    sessionStorage.removeItem('sessionID');
+                    sessionStorage.removeItem('userID');
 
                     setIsAuthenticated(false);
                     navigate('/signinpage');

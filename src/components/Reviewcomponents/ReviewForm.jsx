@@ -245,7 +245,7 @@ const ReviewForm = ({ professorImage }) => {
 
   
     const reviewData = {
-      userID: localStorage.getItem('userID'), // Assuming you store userID in localStorage after login
+      userID: sessionStorage.getItem('userID'), // Assuming you store userID in sessionStorage after login
       professorID: ID, // Assuming professorID is derived from pfppath
       author: currentname,
       authormajor: major,
@@ -267,7 +267,7 @@ const ReviewForm = ({ professorImage }) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${localStorage.getItem('sessionID')}` // Assuming you have a sessionID after login
+        Authorization: `Bearer ${sessionStorage.getItem('sessionID')}` // Assuming you have a sessionID after login
       },
       body: JSON.stringify(reviewData)
     })

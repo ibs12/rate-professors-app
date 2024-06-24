@@ -51,9 +51,12 @@ function Main() {
     .then(data => {
       // Check if the response contains expected data
       if (data.email && data.sessionID && data.userID) {
-        localStorage.setItem('email', data.email);
-        localStorage.setItem('sessionID', data.sessionID);
-        localStorage.setItem('userID', data.userID);
+        sessionStorage.setItem('email', data.email);
+        sessionStorage.setItem('sessionID', data.sessionID);
+        sessionStorage.setItem('userID', data.userID);
+
+
+
         setIsAuthenticated(true);
         checkQuizTaken(data.sessionID);
       } else {

@@ -35,7 +35,7 @@ const AccountSettingsPage = () => {
     const apiUrl = 'http://localhost:8000';
 
     useEffect(() => {
-        const sessionId = localStorage.getItem('sessionID');
+        const sessionId = sessionStorage.getItem('sessionID');
 
         fetch(`${apiUrl}/backend/returnuserinfo/returnuserinfo.php`, {
             method: 'POST',
@@ -87,7 +87,7 @@ const AccountSettingsPage = () => {
     };
 
     const handleResetPassword = () => {
-        const sessionId = localStorage.getItem('sessionID');
+        const sessionId = sessionStorage.getItem('sessionID');
         const oldPassword = currentPassword;
         const newPasswordValue = newPassword;
         const confirmPassword = confirmNewPassword;
@@ -139,9 +139,9 @@ const AccountSettingsPage = () => {
 
 
     const handleConfirmDelete = () => {
-        const email = localStorage.getItem('email');
-        const sessionId = localStorage.getItem('sessionID');
-        const userID = localStorage.getItem('userID');
+        const email = sessionStorage.getItem('email');
+        const sessionId = sessionStorage.getItem('sessionID');
+        const userID = sessionStorage.getItem('userID');
 
         const data = {
             email,
@@ -180,7 +180,7 @@ const AccountSettingsPage = () => {
     };
 
     const handleChangeUsername = () => {
-        const sessionId = localStorage.getItem('sessionID');
+        const sessionId = sessionStorage.getItem('sessionID');
         const newUsername = name;
 
         const data = {
@@ -251,7 +251,7 @@ const AccountSettingsPage = () => {
 
 
     const handleUpdateMajorAndGraduation = () => {
-        const sessionId = localStorage.getItem('sessionID');
+        const sessionId = sessionStorage.getItem('sessionID');
 
             // Check if newgraduationYear is a 4-digit number
         if (!/^\d{4}$/.test(newgraduationYear)) {

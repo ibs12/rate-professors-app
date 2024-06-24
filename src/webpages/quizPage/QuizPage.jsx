@@ -47,7 +47,7 @@ const Quiz = () => {
   };
 
   const addToProfile =() => {   //add to profile
-    const sessionID = localStorage.getItem('sessionID');
+    const sessionID = sessionStorage.getItem('sessionID');
     if (sessionID) {
       fetch(`${apiUrl}/backend/saveQuiz/saveQuiz.php`, {
         method: 'POST',
