@@ -12,17 +12,32 @@ InSight allows University/College Students to find the best profesors from their
 
 ## Search for a professor
 
+![](https://i.imgur.com/NmEkt6E.gif)
+
+
 ## Search for a class
+
+![](https://i.imgur.com/NmEkt6E.gif)
 
 ## View reviews and ket insights about the professor
 
+![](https://i.imgur.com/NmEkt6E.gif)
+
 ## Save a professor
+
+![](https://i.imgur.com/NmEkt6E.gif)
 
 ## Create a Review 
 
+![](https://i.imgur.com/NmEkt6E.gif)
+
 ## Re-take the quiz
 
+![](https://i.imgur.com/NmEkt6E.gif)
+
 ## View recommended professors
+
+![](https://i.imgur.com/NmEkt6E.gif)
 
 
 # Tech Stack
