@@ -32,7 +32,7 @@ InSight allows University/College Students to find the best profesors from their
 
 # Other tools used to create the project:
 
-## Figma, Trello, Github
+## Figma, Trello, Github, XAMPP, PHPMyAdmin
 
 # Getting Started with Create React App
 
