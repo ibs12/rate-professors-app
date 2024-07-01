@@ -1,3 +1,38 @@
+# Project Description 
+
+InSight allows University/College Students to find the best profesors from their university based on their learning style
+
+# How it works
+
+## 1. Sign up
+## 2. Take a learning style quiz 
+## 3. Get recommended professors based on your learning style
+
+# Features
+
+## Search for a professor
+
+## Search for a class
+
+## View reviews and ket insights about the professor
+
+## Save a professor
+
+## Create a Review 
+
+## Re-take the quiz
+
+## View recommended professors
+
+
+# Tech Stack
+
+## Frontend: React.js, HTML, CSS
+## Backend: PHP, MySQL
+
+# Other tools used to create the project:
+
+## Figma, Trello, Github
 
 # Getting Started with Create React App
 
