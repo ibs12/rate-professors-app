@@ -1,3 +1,62 @@
+# Project Description 
+
+InSight allows University/College Students to find the best profesors from their university based on their learning style
+
+# How it works
+
+## 1. Sign up
+## 2. Take a learning style quiz 
+## 3. Get recommended professors based on your learning style
+
+# Features
+
+## Search for a professor
+
+
+![Kapture 2024-07-01 at 20 38 12](https://github.com/ibs12/rate-professors-app/assets/89870752/594bc97c-6e3e-49fb-91dd-a9d5cad5d999)
+
+
+
+
+## Search for a class
+
+![Kapture 2024-07-01 at 20 41 36](https://github.com/ibs12/rate-professors-app/assets/89870752/426f5d8b-271e-4a8d-814a-44d61dc6fe9c)
+
+
+## View reviews and key insights about the professor
+
+![Kapture 2024-07-01 at 20 45 23](https://github.com/ibs12/rate-professors-app/assets/89870752/1cb4c7b1-56fb-4434-848a-b1bcf19fd35b)
+
+
+## Save a professor
+
+![Kapture 2024-07-01 at 20 51 14](https://github.com/ibs12/rate-professors-app/assets/89870752/f7009a55-13f1-484c-8e0e-e3e8f1e3821e)
+
+
+## Create a Review 
+
+![Kapture 2024-07-01 at 20 57 41](https://github.com/ibs12/rate-professors-app/assets/89870752/62455b03-d5ae-4b31-ac68-86c377028c83)
+
+
+
+## Re-take the quiz
+
+![Kapture 2024-07-01 at 21 30 19](https://github.com/ibs12/rate-professors-app/assets/89870752/3a78493a-361c-47c9-9988-e5fe76b7b6ff)
+
+## View recommended professors
+
+![Kapture 2024-07-01 at 21 52 13](https://github.com/ibs12/rate-professors-app/assets/89870752/d4a7ca22-daf8-4ef6-943f-a0877138868d)
+
+
+
+# Tech Stack
+
+## Frontend: React.js, HTML, CSS
+## Backend: PHP, MySQL
+
+# Other tools used to create the project:
+
+## Figma, Trello, Github, XAMPP, PHPMyAdmin
 
 # Getting Started with Create React App
 
