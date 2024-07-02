@@ -37,7 +37,7 @@ InSight allows University/College Students to find the best profesors from their
 
 ## View recommended professors
 
-![](https://i.imgur.com/wb7k6ST.gif)
+![](https://imgur.com/a/wb7k6ST)
 
 
 # Tech Stack
