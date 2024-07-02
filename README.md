@@ -16,8 +16,6 @@ InSight allows University/College Students to find the best profesors from their
 ![Kapture 2024-07-01 at 20 38 12](https://github.com/ibs12/rate-professors-app/assets/89870752/594bc97c-6e3e-49fb-91dd-a9d5cad5d999)
 
 
-
-
 ## Search for a class
 
 ![Kapture 2024-07-01 at 20 41 36](https://github.com/ibs12/rate-professors-app/assets/89870752/426f5d8b-271e-4a8d-814a-44d61dc6fe9c)
