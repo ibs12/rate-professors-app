@@ -35,7 +35,8 @@ InSight allows University/College Students to find the best profesors from their
 
 ## Create a Review 
 
-![Kapture 2024-07-01 at 20 57 41](https://github.com/ibs12/rate-professors-app/assets/89870752/a45b344c-2754-4305-9abe-3820e2181635)
+![Kapture 2024-07-01 at 20 57 41](https://github.com/ibs12/rate-professors-app/assets/89870752/62455b03-d5ae-4b31-ac68-86c377028c83)
+
 
 
 ## Re-take the quiz
