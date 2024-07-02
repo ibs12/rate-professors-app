@@ -1,4 +1,4 @@
-![Kapture 2024-07-01 at 20 24 55](https://github.com/ibs12/rate-professors-app/assets/89870752/44414cf2-a561-4227-977b-eab707ff3538)# Project Description 
+# Project Description 
 
 InSight allows University/College Students to find the best profesors from their university based on their learning style
 
@@ -12,16 +12,18 @@ InSight allows University/College Students to find the best profesors from their
 
 ## Search for a professor
 
-![](https://i.imgur.com/NmEkt6E.gif)
 
-![Kapture 2024-07-01 at 20 24 55](https://github.com/ibs12/rate-professors-app/assets/89870752/ece1c3d1-9f37-4bd2-8554-3f27d7fba4db)
+![Kapture 2024-07-01 at 20 38 12](https://github.com/ibs12/rate-professors-app/assets/89870752/594bc97c-6e3e-49fb-91dd-a9d5cad5d999)
+
+
 
 
 ## Search for a class
 
-![](https://imgur.com/a/PrZD8cs)
+![Kapture 2024-07-01 at 20 41 36](https://github.com/ibs12/rate-professors-app/assets/89870752/426f5d8b-271e-4a8d-814a-44d61dc6fe9c)
 
-## View reviews and ket insights about the professor
+
+## View reviews and key insights about the professor
 
 ![](https://i.imgur.com/NmEkt6E.gif)
 
